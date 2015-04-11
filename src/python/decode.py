@@ -13,7 +13,7 @@ def main(argv):
 	videoin = str(sys.argv[1])
 	res = str(sys.argv[2])
 
-	subprocess.call("ffmpeg -i " + videoin + " -r 1 -f rawvideo - | ./lvdodec -s " + res + " -q 6 --qmin 1 --qmax 4 | mplayer -", shell=True)
+	subprocess.call("ffmpeg -i " + videoin + " -r 1 -f rawvideo - | ../C/./lvdodec -s " + res + " -q 6 --qmin 1 --qmax 4 | mplayer -", shell=True)
 	sys.exit()
 
 
