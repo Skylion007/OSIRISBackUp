@@ -15,7 +15,7 @@ def main(argv):
 	res = str(sys.argv[2])
 	videoout = str(sys.argv[3])
 
-	subprocess.call("ffmpeg -i " + videoin + " -r 1 -f rawvideo - | ../C/./lvdodec -s " + res + " -q 6 --qmin 1 --qmax 4 | cat > " + videoout, shell=True)
+	subprocess.call("unzip " + videoin + " | ffmpeg -i - -r 1 -f rawvideo - | ../C/./lvdodec -s " + res + " -q 6 --qmin 1 --qmax 4 | cat > " + videoout, shell=True)
 	sys.exit()
 
 
