@@ -1,0 +1,1638 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = "ABZ6GAcJD8CnfLcVkIvdW3LoI37AZRCt8Q:1428816617208";
+ 
+ 
+ var CS_env = {"assetVersionPath": "https://ssl.gstatic.com/codesite/ph/4119706131923068122", "profileUrl": "/u/101243285619078854093/", "token": "ABZ6GAcJD8CnfLcVkIvdW3LoI37AZRCt8Q:1428816617208", "projectName": "google-api-python-client", "relativeBaseUrl": "", "loggedInUserEmail": "anthonylobko@gmail.com", "domainName": null, "assetHostPath": "https://ssl.gstatic.com/codesite/ph", "projectHomeUrl": "/p/google-api-python-client"};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-18058-6'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script>
+ 
+ 
+ <title>login.html - 
+ google-api-python-client -
+ 
+ 
+ Google APIs Client Library for Python - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/4119706131923068122/css/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/4119706131923068122/css/ph_detail.css" >
+ 
+ 
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/4119706131923068122/css/d_sb.css" >
+ 
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/4119706131923068122/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ 
+  tr.inline_comment {
+ background: #fff;
+ vertical-align: top;
+ }
+ div.draft, div.published {
+ padding: .3em;
+ border: 1px solid #999; 
+ margin-bottom: .1em;
+ font-family: arial, sans-serif;
+ max-width: 60em;
+ }
+ div.draft {
+ background: #ffa;
+ } 
+ div.published {
+ background: #e5ecf9;
+ }
+ div.published .body, div.draft .body {
+ padding: .5em .1em .1em .1em;
+ max-width: 60em;
+ white-space: pre-wrap;
+ white-space: -moz-pre-wrap;
+ white-space: -pre-wrap;
+ white-space: -o-pre-wrap;
+ word-wrap: break-word;
+ font-size: 1em;
+ }
+ div.draft .actions {
+ margin-left: 1em;
+ font-size: 90%;
+ }
+ div.draft form {
+ padding: .5em .5em .5em 0;
+ }
+ div.draft textarea, div.published textarea {
+ width: 95%;
+ height: 10em;
+ font-family: arial, sans-serif;
+ margin-bottom: .5em;
+ }
+
+ 
+ .nocursor, .nocursor td, .cursor_hidden, .cursor_hidden td {
+ background-color: white;
+ height: 2px;
+ }
+ .cursor, .cursor td {
+ background-color: darkblue;
+ height: 2px;
+ display: '';
+ }
+ 
+ 
+.list {
+ border: 1px solid white;
+ border-bottom: 0;
+}
+
+ 
+ </style>
+</head>
+<body class="t4">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ 
+ <a href="#" id="multilogin-dropdown" onclick="return false;"
+ ><u><b>anthonylobko@gmail.com</b></u> <small>&#9660;</small></a>
+ 
+ 
+ | <a href="/u/101243285619078854093/" id="projects-dropdown" onclick="return false;"
+ ><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="/u/101243285619078854093/" onclick="_CS_click('/gb/ph/profile');"
+ title="Profile, Updates, and Settings"
+ ><u>Profile</u></a>
+ | <a href="https://www.google.com/accounts/Logout?continue=https%3A%2F%2Fcode.google.com%2Fp%2Fgoogle-api-python-client%2Fsource%2Fbrowse%2Fsamples%2Fdjango_sample%2Ftemplates%2Fplus%2Flogin.html" 
+ onclick="_CS_click('/gb/ph/signout');"
+ ><u>Sign out</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0"
+ itemscope itemtype="http://schema.org/CreativeWork">
+ <tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="/p/google-api-python-client">
+ <a href="/p/google-api-python-client/">
+ 
+ <img src="https://ssl.gstatic.com/codesite/ph/images/search-48.gif" alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="/p/google-api-python-client/"><span itemprop="name">google-api-python-client</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link"
+ href="/p/google-api-python-client/"><span itemprop="description">Google APIs Client Library for Python</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects" >
+ </form>
+ 
+ </tr>
+ </table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="/p/google-api-python-client/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="/p/google-api-python-client/downloads/list" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/google-api-python-client/w/list" class="tab ">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/google-api-python-client/issues/list"
+ class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/google-api-python-client/source/checkout"
+ class="tab active">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/export-to-github/export?project=google-api-python-client">
+ <button>Export to GitHub</button>
+ </a>
+ 
+ 
+ 
+ 
+ 
+ <div class=gtbc></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tr>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="subt">
+ <div class="st2">
+ <div class="isf">
+ 
+ <form action="/p/google-api-python-client/source/browse" style="display: inline">
+ 
+ Repository:
+ <select name="repo" id="repo" style="font-size: 92%" onchange="submit()">
+ <option value="default">default</option><option value="wiki">wiki</option>
+ </select>
+ </form>
+ 
+ 
+
+
+ <span class="inst1"><a href="/p/google-api-python-client/source/checkout">Checkout</a></span> &nbsp;
+ <span class="inst2"><a href="/p/google-api-python-client/source/browse/">Browse</a></span> &nbsp;
+ <span class="inst3"><a href="/p/google-api-python-client/source/list">Changes</a></span> &nbsp;
+ <span class="inst4"><a href="/p/google-api-python-client/source/clones">Clones</a></span> &nbsp; 
+ 
+ 
+ </form>
+ <script type="text/javascript">
+ 
+ function codesearchQuery(form) {
+ var query = document.getElementById('q').value;
+ if (query) { form.action += '%20' + query; }
+ }
+ </script>
+ </div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol"
+ 
+>
+
+ 
+
+
+
+
+<div class="expand">
+<div id="colcontrol">
+<style type="text/css">
+ #file_flipper { white-space: nowrap; padding-right: 2em; }
+ #file_flipper.hidden { display: none; }
+ #file_flipper .pagelink { color: #0000CC; text-decoration: underline; }
+ #file_flipper #visiblefiles { padding-left: 0.5em; padding-right: 0.5em; }
+</style>
+<table id="nav_and_rev" class="list"
+ cellpadding="0" cellspacing="0" width="100%">
+ <tr>
+ 
+ <td nowrap="nowrap" class="src_crumbs src_nav" width="33%">
+ <strong class="src_nav">Source path:&nbsp;</strong>
+ <span id="crumb_root">
+ 
+ <a href="/p/google-api-python-client/source/browse/">hg</a>/&nbsp;</span>
+ <span id="crumb_links" class="ifClosed"><a href="/p/google-api-python-client/source/browse/samples/">samples</a><span class="sp">/&nbsp;</span><a href="/p/google-api-python-client/source/browse/samples/django_sample/">django_sample</a><span class="sp">/&nbsp;</span><a href="/p/google-api-python-client/source/browse/samples/django_sample/templates/">templates</a><span class="sp">/&nbsp;</span><a href="/p/google-api-python-client/source/browse/samples/django_sample/templates/plus/">plus</a><span class="sp">/&nbsp;</span>login.html</span>
+ 
+ 
+ 
+ 
+ 
+ <span class="sourcelabel"><strong>Branch:</strong> default</span>
+ 
+ 
+ 
+ 
+ <form class="src_nav">
+ 
+ <span class="sourcelabel">
+ <strong>Tag:</strong>
+ <select id="tag_select" name="name" onchange="submit()">
+ <option value="">&lt;none&gt;</option>
+ 
+ <option value="1.0beta2" >1.0beta2</option>
+ 
+ <option value="1.0beta3" >1.0beta3</option>
+ 
+ <option value="1.0beta6" >1.0beta6</option>
+ 
+ <option value="1.0beta7" >1.0beta7</option>
+ 
+ <option value="1.0beta8" >1.0beta8</option>
+ 
+ <option value="1.0c1" >1.0c1</option>
+ 
+ <option value="1.0c2" >1.0c2</option>
+ 
+ <option value="1.0c3" >1.0c3</option>
+ 
+ <option value="1.1" >1.1</option>
+ 
+ <option value="1.2" >1.2</option>
+ 
+ <option value="v1.0b9" >v1.0b9</option>
+ 
+ </select>
+ </span>
+ </form>
+ 
+ 
+
+
+ <span class="sourcelabel">Download
+ <a href="//google-api-python-client.googlecode.com/archive/98bac11c0c1c4aa7f322d119080f13113dae9576.zip" rel="nofollow">zip</a> | <a href="//google-api-python-client.googlecode.com/archive/98bac11c0c1c4aa7f322d119080f13113dae9576.tar.gz" rel="nofollow">tar.gz</a>
+ </span>
+
+
+ </td>
+ 
+ 
+ <td nowrap="nowrap" width="33%" align="right">
+ <table cellpadding="0" cellspacing="0" style="font-size: 100%"><tr>
+ 
+ 
+ <td class="flipper">
+ <ul class="leftside">
+ 
+ <li><a href="/p/google-api-python-client/source/browse/samples/django_sample/templates/buzz/login.html?r=9dab02d53f80c1b831be8f6087975d21291f75ef" title="Previous">&lsaquo;9dab02d53f80</a></li>
+ 
+ </ul>
+ </td>
+ 
+ <td class="flipper"><b>98bac11c0c1c</b></td>
+ 
+ </tr></table>
+ </td> 
+ </tr>
+</table>
+
+<div class="fc">
+ 
+ 
+ 
+<style type="text/css">
+.undermouse span {
+ background-image: url(https://ssl.gstatic.com/codesite/ph/images/comments.gif); }
+</style>
+<table class="opened" id="review_comment_area"
+><tr>
+<td id="nums">
+<pre><table width="100%"><tr class="nocursor"><td></td></tr></table></pre>
+<pre><table width="100%" id="nums_table_0"><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_1"
+
+><td id="1"><a href="#1">1</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_2"
+
+><td id="2"><a href="#2">2</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_3"
+
+><td id="3"><a href="#3">3</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_4"
+
+><td id="4"><a href="#4">4</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_5"
+
+><td id="5"><a href="#5">5</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_6"
+
+><td id="6"><a href="#6">6</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_7"
+
+><td id="7"><a href="#7">7</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_8"
+
+><td id="8"><a href="#8">8</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_9"
+
+><td id="9"><a href="#9">9</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_10"
+
+><td id="10"><a href="#10">10</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_11"
+
+><td id="11"><a href="#11">11</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_12"
+
+><td id="12"><a href="#12">12</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_13"
+
+><td id="13"><a href="#13">13</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_14"
+
+><td id="14"><a href="#14">14</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_15"
+
+><td id="15"><a href="#15">15</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_16"
+
+><td id="16"><a href="#16">16</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_17"
+
+><td id="17"><a href="#17">17</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_18"
+
+><td id="18"><a href="#18">18</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_19"
+
+><td id="19"><a href="#19">19</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_20"
+
+><td id="20"><a href="#20">20</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_21"
+
+><td id="21"><a href="#21">21</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_22"
+
+><td id="22"><a href="#22">22</a></td></tr
+><tr id="gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_23"
+
+><td id="23"><a href="#23">23</a></td></tr
+></table></pre>
+<pre><table width="100%"><tr class="nocursor"><td></td></tr></table></pre>
+</td>
+<td id="lines">
+<pre><table width="100%"><tr class="cursor_stop cursor_hidden"><td></td></tr></table></pre>
+<pre class="prettyprint lang-html"><table id="src_table_0"><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_1
+
+><td class="source">{% block content %}<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_2
+
+><td class="source"><br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_3
+
+><td class="source">{% if form.errors %}<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_4
+
+><td class="source">&lt;p&gt;Your username and password didn&#39;t match. Please try again.&lt;/p&gt;<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_5
+
+><td class="source">{% endif %}<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_6
+
+><td class="source"><br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_7
+
+><td class="source">&lt;form method=&quot;post&quot; action=&quot;{% url django.contrib.auth.views.login %}&quot;&gt;{% csrf_token %}<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_8
+
+><td class="source">&lt;table&gt;<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_9
+
+><td class="source">&lt;tr&gt;<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_10
+
+><td class="source">    &lt;td&gt;{{ form.username.label_tag }}&lt;/td&gt;<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_11
+
+><td class="source">    &lt;td&gt;{{ form.username }}&lt;/td&gt;<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_12
+
+><td class="source">&lt;/tr&gt;<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_13
+
+><td class="source">&lt;tr&gt;<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_14
+
+><td class="source">    &lt;td&gt;{{ form.password.label_tag }}&lt;/td&gt;<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_15
+
+><td class="source">    &lt;td&gt;{{ form.password }}&lt;/td&gt;<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_16
+
+><td class="source">&lt;/tr&gt;<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_17
+
+><td class="source">&lt;/table&gt;<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_18
+
+><td class="source"><br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_19
+
+><td class="source">&lt;input type=&quot;submit&quot; value=&quot;login&quot; /&gt;<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_20
+
+><td class="source">&lt;input type=&quot;hidden&quot; name=&quot;next&quot; value=&quot;{{ next }}&quot; /&gt;<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_21
+
+><td class="source">&lt;/form&gt;<br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_22
+
+><td class="source"><br></td></tr
+><tr
+id=sl_svn98bac11c0c1c4aa7f322d119080f13113dae9576_23
+
+><td class="source">{% endblock %}<br></td></tr
+></table></pre>
+<pre><table width="100%"><tr class="cursor_stop cursor_hidden"><td></td></tr></table></pre>
+</td>
+</tr></table>
+
+ 
+<script type="text/javascript">
+ var lineNumUnderMouse = -1;
+ 
+ function gutterOver(num) {
+ gutterOut();
+ var newTR = document.getElementById('gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_' + num);
+ if (newTR) {
+ newTR.className = 'undermouse';
+ }
+ lineNumUnderMouse = num;
+ }
+ function gutterOut() {
+ if (lineNumUnderMouse != -1) {
+ var oldTR = document.getElementById(
+ 'gr_svn98bac11c0c1c4aa7f322d119080f13113dae9576_' + lineNumUnderMouse);
+ if (oldTR) {
+ oldTR.className = '';
+ }
+ lineNumUnderMouse = -1;
+ }
+ }
+ var numsGenState = {table_base_id: 'nums_table_'};
+ var srcGenState = {table_base_id: 'src_table_'};
+ var alignerRunning = false;
+ var startOver = false;
+ function setLineNumberHeights() {
+ if (alignerRunning) {
+ startOver = true;
+ return;
+ }
+ numsGenState.chunk_id = 0;
+ numsGenState.table = document.getElementById('nums_table_0');
+ numsGenState.row_num = 0;
+ if (!numsGenState.table) {
+ return; // Silently exit if no file is present.
+ }
+ srcGenState.chunk_id = 0;
+ srcGenState.table = document.getElementById('src_table_0');
+ srcGenState.row_num = 0;
+ alignerRunning = true;
+ continueToSetLineNumberHeights();
+ }
+ function rowGenerator(genState) {
+ if (genState.row_num < genState.table.rows.length) {
+ var currentRow = genState.table.rows[genState.row_num];
+ genState.row_num++;
+ return currentRow;
+ }
+ var newTable = document.getElementById(
+ genState.table_base_id + (genState.chunk_id + 1));
+ if (newTable) {
+ genState.chunk_id++;
+ genState.row_num = 0;
+ genState.table = newTable;
+ return genState.table.rows[0];
+ }
+ return null;
+ }
+ var MAX_ROWS_PER_PASS = 1000;
+ function continueToSetLineNumberHeights() {
+ var rowsInThisPass = 0;
+ var numRow = 1;
+ var srcRow = 1;
+ while (numRow && srcRow && rowsInThisPass < MAX_ROWS_PER_PASS) {
+ numRow = rowGenerator(numsGenState);
+ srcRow = rowGenerator(srcGenState);
+ rowsInThisPass++;
+ if (numRow && srcRow) {
+ if (numRow.offsetHeight != srcRow.offsetHeight) {
+ numRow.firstChild.style.height = srcRow.offsetHeight + 'px';
+ }
+ }
+ }
+ if (rowsInThisPass >= MAX_ROWS_PER_PASS) {
+ setTimeout(continueToSetLineNumberHeights, 10);
+ } else {
+ alignerRunning = false;
+ if (startOver) {
+ startOver = false;
+ setTimeout(setLineNumberHeights, 500);
+ }
+ }
+ }
+ function initLineNumberHeights() {
+ // Do 2 complete passes, because there can be races
+ // between this code and prettify.
+ startOver = true;
+ setTimeout(setLineNumberHeights, 250);
+ window.onresize = setLineNumberHeights;
+ }
+ initLineNumberHeights();
+</script>
+
+ 
+ 
+ <div id="log">
+ <div style="text-align:right">
+ <a class="ifCollapse" href="#" onclick="_toggleMeta(this); return false">Show details</a>
+ <a class="ifExpand" href="#" onclick="_toggleMeta(this); return false">Hide details</a>
+ </div>
+ <div class="ifExpand">
+ 
+ 
+ <div class="pmeta_bubble_bg" style="border:1px solid white">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <div id="changelog">
+ <p>Change log</p>
+ <div>
+ <a href="/p/google-api-python-client/source/detail?spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576&amp;r=67b8dcf946169e1ad62ecb0555942865b9186ea8">67b8dcf94616</a>
+ by Joe Gregorio &lt;jcgrego...@google.com&gt;
+ on Nov 9, 2011
+ &nbsp; <a href="/p/google-api-python-client/source/diff?spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576&r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;format=side&amp;path=/samples/django_sample/templates/plus/login.html&amp;old_path=/samples/django_sample/templates/buzz/login.html&amp;old=fc34f5ef63c34ffa50a51b99a401ba520a8f391d">Diff</a>
+ </div>
+ <pre>Removing Buzz from comments in code</pre>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ <script type="text/javascript">
+ var detail_url = '/p/google-api-python-client/source/detail?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576';
+ var publish_url = '/p/google-api-python-client/source/detail?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576#publish';
+ // describe the paths of this revision in javascript.
+ var changed_paths = [];
+ var changed_urls = [];
+ 
+ changed_paths.push('/README');
+ changed_urls.push('/p/google-api-python-client/source/browse/README?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/apiclient/http.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/apiclient/http.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/apiclient.anyjson.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/apiclient.anyjson.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/apiclient.contrib.buzz.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/apiclient.contrib.buzz.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/apiclient.contrib.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/apiclient.contrib.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/apiclient.contrib.latitude.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/apiclient.contrib.latitude.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/apiclient.contrib.moderator.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/apiclient.contrib.moderator.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/apiclient.discovery.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/apiclient.discovery.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/apiclient.errors.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/apiclient.errors.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/apiclient.ext.django_orm.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/apiclient.ext.django_orm.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/apiclient.http.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/apiclient.http.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/apiclient.model.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/apiclient.model.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/apiclient.oauth.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/apiclient.oauth.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/build.sh');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/build.sh?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/dyn/analytics.v3.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/dyn/analytics.v3.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/dyn/analytics.v3.report.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/dyn/analytics.v3.report.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/dyn/buzz.v1.activities.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/dyn/buzz.v1.activities.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/dyn/buzz.v1.comments.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/dyn/buzz.v1.comments.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/dyn/buzz.v1.groups.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/dyn/buzz.v1.groups.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/dyn/buzz.v1.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/dyn/buzz.v1.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/dyn/buzz.v1.people.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/dyn/buzz.v1.people.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/dyn/buzz.v1.photoAlbums.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/dyn/buzz.v1.photoAlbums.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/dyn/buzz.v1.photos.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/dyn/buzz.v1.photos.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/dyn/buzz.v1.related.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/dyn/buzz.v1.related.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/dyn/orkut.v2.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/dyn/orkut.v2.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/dyn/orkut.v2.scraps.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/dyn/orkut.v2.scraps.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/dyn/plus.v1.activities.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/dyn/plus.v1.activities.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/dyn/plus.v1.people.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/dyn/plus.v1.people.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/dyn/shopping.v1.products.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/dyn/shopping.v1.products.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/fakesettings.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/fakesettings.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/oauth2client.client.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/oauth2client.client.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/oauth2client.clientsecrets.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/oauth2client.clientsecrets.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/oauth2client.django_orm.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/oauth2client.django_orm.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/oauth2client.file.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/oauth2client.file.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/docs/oauth2client.multistore_file.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/docs/oauth2client.multistore_file.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/oauth2client/appengine.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/oauth2client/appengine.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/appengine/apiclient');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/appengine/apiclient?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/appengine/gflags.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/appengine/gflags.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/appengine/gflags_validators.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/appengine/gflags_validators.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/appengine/httplib2');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/appengine/httplib2?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/appengine/oauth2');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/appengine/oauth2?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/appengine/oauth2client');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/appengine/oauth2client?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/appengine/uritemplate');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/appengine/uritemplate?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/appengine_with_robots/apiclient');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/appengine_with_robots/apiclient?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/appengine_with_robots/gflags.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/appengine_with_robots/gflags.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/appengine_with_robots/gflags_validators.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/appengine_with_robots/gflags_validators.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/appengine_with_robots/httplib2');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/appengine_with_robots/httplib2?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/appengine_with_robots/oauth2');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/appengine_with_robots/oauth2?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/appengine_with_robots/oauth2client');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/appengine_with_robots/oauth2client?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/appengine_with_robots/uritemplate');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/appengine_with_robots/uritemplate?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/django_sample/buzz/__init__.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/django_sample/buzz/__init__.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/django_sample/buzz/models.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/django_sample/buzz/models.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/django_sample/buzz/tests.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/django_sample/buzz/tests.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/django_sample/buzz/views.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/django_sample/buzz/views.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/django_sample/plus/__init__.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/django_sample/plus/__init__.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/django_sample/plus/models.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/django_sample/plus/models.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/django_sample/plus/tests.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/django_sample/plus/tests.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/django_sample/plus/views.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/django_sample/plus/views.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/django_sample/settings.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/django_sample/settings.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/django_sample/templates/buzz/login.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/django_sample/templates/buzz/login.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/django_sample/templates/buzz/welcome.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/django_sample/templates/buzz/welcome.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/django_sample/templates/plus/login.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/django_sample/templates/plus/login.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ var selected_path = '/samples/django_sample/templates/plus/login.html';
+ 
+ 
+ changed_paths.push('/samples/django_sample/templates/plus/welcome.html');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/django_sample/templates/plus/welcome.html?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/django_sample/urls.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/django_sample/urls.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/src/buzz.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/src/buzz.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/tasks_appengine/apiclient');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/tasks_appengine/apiclient?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/tasks_appengine/gflags.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/tasks_appengine/gflags.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/tasks_appengine/gflags_validators.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/tasks_appengine/gflags_validators.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/tasks_appengine/httplib2');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/tasks_appengine/httplib2?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/tasks_appengine/oauth2client');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/tasks_appengine/oauth2client?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/tasks_appengine/uritemplate');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/tasks_appengine/uritemplate?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/samples/threadqueue/main.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/samples/threadqueue/main.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ changed_paths.push('/setup.py');
+ changed_urls.push('/p/google-api-python-client/source/browse/setup.py?r\x3d67b8dcf946169e1ad62ecb0555942865b9186ea8\x26spec\x3dsvn98bac11c0c1c4aa7f322d119080f13113dae9576');
+ 
+ 
+ function getCurrentPageIndex() {
+ for (var i = 0; i < changed_paths.length; i++) {
+ if (selected_path == changed_paths[i]) {
+ return i;
+ }
+ }
+ }
+ function getNextPage() {
+ var i = getCurrentPageIndex();
+ if (i < changed_paths.length - 1) {
+ return changed_urls[i + 1];
+ }
+ return null;
+ }
+ function getPreviousPage() {
+ var i = getCurrentPageIndex();
+ if (i > 0) {
+ return changed_urls[i - 1];
+ }
+ return null;
+ }
+ function gotoNextPage() {
+ var page = getNextPage();
+ if (!page) {
+ page = detail_url;
+ }
+ window.location = page;
+ }
+ function gotoPreviousPage() {
+ var page = getPreviousPage();
+ if (!page) {
+ page = detail_url;
+ }
+ window.location = page;
+ }
+ function gotoDetailPage() {
+ window.location = detail_url;
+ }
+ function gotoPublishPage() {
+ window.location = publish_url;
+ }
+</script>
+
+ 
+ <style type="text/css">
+ #review_nav {
+ border-top: 3px solid white;
+ padding-top: 6px;
+ margin-top: 1em;
+ }
+ #review_nav td {
+ vertical-align: middle;
+ }
+ #review_nav select {
+ margin: .5em 0;
+ }
+ </style>
+ <div id="review_nav">
+ <table><tr><td>Go to:&nbsp;</td><td>
+ <select name="files_in_rev" onchange="window.location=this.value">
+ 
+ <option value="/p/google-api-python-client/source/browse/README?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/README</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/apiclient/http.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/apiclient/http.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/apiclient.anyjson.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/apiclient.anyjson.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/apiclient.contrib.buzz.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/apiclient.contrib.buzz.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/apiclient.contrib.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/apiclient.contrib.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/apiclient.contrib.latitude.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >.../apiclient.contrib.latitude.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/apiclient.contrib.moderator.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...apiclient.contrib.moderator.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/apiclient.discovery.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/apiclient.discovery.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/apiclient.errors.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/apiclient.errors.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/apiclient.ext.django_orm.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/apiclient.ext.django_orm.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/apiclient.http.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/apiclient.http.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/apiclient.model.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/apiclient.model.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/apiclient.oauth.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/apiclient.oauth.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/build.sh?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/build.sh</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/dyn/analytics.v3.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/dyn/analytics.v3.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/dyn/analytics.v3.report.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/dyn/analytics.v3.report.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/dyn/buzz.v1.activities.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/dyn/buzz.v1.activities.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/dyn/buzz.v1.comments.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/dyn/buzz.v1.comments.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/dyn/buzz.v1.groups.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/dyn/buzz.v1.groups.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/dyn/buzz.v1.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/dyn/buzz.v1.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/dyn/buzz.v1.people.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/dyn/buzz.v1.people.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/dyn/buzz.v1.photoAlbums.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/dyn/buzz.v1.photoAlbums.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/dyn/buzz.v1.photos.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/dyn/buzz.v1.photos.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/dyn/buzz.v1.related.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/dyn/buzz.v1.related.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/dyn/orkut.v2.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/dyn/orkut.v2.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/dyn/orkut.v2.scraps.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/dyn/orkut.v2.scraps.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/dyn/plus.v1.activities.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/dyn/plus.v1.activities.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/dyn/plus.v1.people.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/dyn/plus.v1.people.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/dyn/shopping.v1.products.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/dyn/shopping.v1.products.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/fakesettings.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/fakesettings.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/oauth2client.client.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/oauth2client.client.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/oauth2client.clientsecrets.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >.../oauth2client.clientsecrets.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/oauth2client.django_orm.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/oauth2client.django_orm.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/oauth2client.file.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/docs/oauth2client.file.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/docs/oauth2client.multistore_file.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...auth2client.multistore_file.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/oauth2client/appengine.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/oauth2client/appengine.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/appengine/apiclient?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/samples/appengine/apiclient</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/appengine/gflags.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/samples/appengine/gflags.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/appengine/gflags_validators.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...s/appengine/gflags_validators.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/appengine/httplib2?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/samples/appengine/httplib2</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/appengine/oauth2?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/samples/appengine/oauth2</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/appengine/oauth2client?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/samples/appengine/oauth2client</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/appengine/uritemplate?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/samples/appengine/uritemplate</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/appengine_with_robots/apiclient?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >.../appengine_with_robots/apiclient</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/appengine_with_robots/gflags.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >.../appengine_with_robots/gflags.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/appengine_with_robots/gflags_validators.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...with_robots/gflags_validators.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/appengine_with_robots/httplib2?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...s/appengine_with_robots/httplib2</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/appengine_with_robots/oauth2?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...les/appengine_with_robots/oauth2</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/appengine_with_robots/oauth2client?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...pengine_with_robots/oauth2client</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/appengine_with_robots/uritemplate?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...ppengine_with_robots/uritemplate</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/django_sample/buzz/__init__.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...s/django_sample/buzz/__init__.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/django_sample/buzz/models.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...les/django_sample/buzz/models.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/django_sample/buzz/tests.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...ples/django_sample/buzz/tests.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/django_sample/buzz/views.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...ples/django_sample/buzz/views.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/django_sample/plus/__init__.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...s/django_sample/plus/__init__.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/django_sample/plus/models.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...les/django_sample/plus/models.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/django_sample/plus/tests.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...ples/django_sample/plus/tests.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/django_sample/plus/views.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...ples/django_sample/plus/views.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/django_sample/settings.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/samples/django_sample/settings.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/django_sample/templates/buzz/login.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...sample/templates/buzz/login.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/django_sample/templates/buzz/welcome.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...mple/templates/buzz/welcome.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/django_sample/templates/plus/login.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ selected="selected"
+ >...sample/templates/plus/login.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/django_sample/templates/plus/welcome.html?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...mple/templates/plus/welcome.html</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/django_sample/urls.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/samples/django_sample/urls.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/src/buzz.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/samples/src/buzz.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/tasks_appengine/apiclient?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/samples/tasks_appengine/apiclient</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/tasks_appengine/gflags.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/samples/tasks_appengine/gflags.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/tasks_appengine/gflags_validators.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...s_appengine/gflags_validators.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/tasks_appengine/httplib2?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/samples/tasks_appengine/httplib2</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/tasks_appengine/oauth2client?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...les/tasks_appengine/oauth2client</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/tasks_appengine/uritemplate?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >...ples/tasks_appengine/uritemplate</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/samples/threadqueue/main.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/samples/threadqueue/main.py</option>
+ 
+ <option value="/p/google-api-python-client/source/browse/setup.py?r=67b8dcf946169e1ad62ecb0555942865b9186ea8&amp;spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576"
+ 
+ >/setup.py</option>
+ 
+ </select>
+ </td></tr></table>
+ 
+ 
+ 
+
+
+
+ 
+ </div>
+ 
+ 
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ <div class="pmeta_bubble_bg" style="border:1px solid white">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <div id="older_bubble">
+ <p>Older revisions</p>
+ 
+ 
+ <div class="closed" style="margin-bottom:3px;" >
+ <a class="ifClosed" onclick="return _toggleHidden(this)"><img src="https://ssl.gstatic.com/codesite/ph/images/plus.gif" ></a>
+ <a class="ifOpened" onclick="return _toggleHidden(this)"><img src="https://ssl.gstatic.com/codesite/ph/images/minus.gif" ></a>
+ <a href="/p/google-api-python-client/source/detail?spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576&r=fc34f5ef63c34ffa50a51b99a401ba520a8f391d">fc34f5ef63c3</a>
+ by Joe Gregorio &lt;jcgrego...@google.com&gt;
+ on Mar 25, 2011
+ &nbsp; <a href="/p/google-api-python-client/source/diff?spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576&r=fc34f5ef63c34ffa50a51b99a401ba520a8f391d&amp;format=side&amp;path=/samples/django_sample/templates/buzz/login.html&amp;old_path=/samples/django_sample/templates/buzz/login.html&amp;old=c15d56f34d4155db0cfebc905400f8da8bf17f37">Diff</a>
+ <br>
+ <pre class="ifOpened">Cleaning up 2.7 compatibility and more
+work on installer.</pre>
+ </div>
+ 
+ <div class="closed" style="margin-bottom:3px;" >
+ <a class="ifClosed" onclick="return _toggleHidden(this)"><img src="https://ssl.gstatic.com/codesite/ph/images/plus.gif" ></a>
+ <a class="ifOpened" onclick="return _toggleHidden(this)"><img src="https://ssl.gstatic.com/codesite/ph/images/minus.gif" ></a>
+ <a href="/p/google-api-python-client/source/detail?spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576&r=c15d56f34d4155db0cfebc905400f8da8bf17f37">c15d56f34d41</a>
+ by Joe Gregorio &lt;jcgrego...@google.com&gt;
+ on Sep 27, 2010
+ &nbsp; <a href="/p/google-api-python-client/source/diff?spec=svn98bac11c0c1c4aa7f322d119080f13113dae9576&r=c15d56f34d4155db0cfebc905400f8da8bf17f37&amp;format=side&amp;path=/samples/django_sample/templates/buzz/login.html&amp;old_path=/samples/django_sample/templates/buzz/login.html&amp;old=">Diff</a>
+ <br>
+ <pre class="ifOpened">First pass at a Django sample.</pre>
+ </div>
+ 
+ 
+ <a href="/p/google-api-python-client/source/list?path=/samples/django_sample/templates/plus/login.html&r=67b8dcf946169e1ad62ecb0555942865b9186ea8">All revisions of this file</a>
+ </div>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ <div class="pmeta_bubble_bg" style="border:1px solid white">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <div id="fileinfo_bubble">
+ <p>File info</p>
+ 
+ <div>Size: 518 bytes,
+ 23 lines</div>
+ 
+ <div><a href="//google-api-python-client.googlecode.com/hg/samples/django_sample/templates/plus/login.html">View raw file</a></div>
+ </div>
+ 
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ </div>
+ </div>
+
+
+</div>
+
+</div>
+</div>
+
+<script src="https://ssl.gstatic.com/codesite/ph/4119706131923068122/js/prettify/prettify.js"></script>
+<script type="text/javascript">prettyPrint();</script>
+
+
+<script src="https://ssl.gstatic.com/codesite/ph/4119706131923068122/js/source_file_scripts.js"></script>
+
+ <script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/4119706131923068122/js/kibbles.js"></script>
+ <script type="text/javascript">
+ var lastStop = null;
+ var initialized = false;
+ 
+ function updateCursor(next, prev) {
+ if (prev && prev.element) {
+ prev.element.className = 'cursor_stop cursor_hidden';
+ }
+ if (next && next.element) {
+ next.element.className = 'cursor_stop cursor';
+ lastStop = next.index;
+ }
+ }
+ 
+ function pubRevealed(data) {
+ updateCursorForCell(data.cellId, 'cursor_stop cursor_hidden');
+ if (initialized) {
+ reloadCursors();
+ }
+ }
+ 
+ function draftRevealed(data) {
+ updateCursorForCell(data.cellId, 'cursor_stop cursor_hidden');
+ if (initialized) {
+ reloadCursors();
+ }
+ }
+ 
+ function draftDestroyed(data) {
+ updateCursorForCell(data.cellId, 'nocursor');
+ if (initialized) {
+ reloadCursors();
+ }
+ }
+ function reloadCursors() {
+ kibbles.skipper.reset();
+ loadCursors();
+ if (lastStop != null) {
+ kibbles.skipper.setCurrentStop(lastStop);
+ }
+ }
+ // possibly the simplest way to insert any newly added comments
+ // is to update the class of the corresponding cursor row,
+ // then refresh the entire list of rows.
+ function updateCursorForCell(cellId, className) {
+ var cell = document.getElementById(cellId);
+ // we have to go two rows back to find the cursor location
+ var row = getPreviousElement(cell.parentNode);
+ row.className = className;
+ }
+ // returns the previous element, ignores text nodes.
+ function getPreviousElement(e) {
+ var element = e.previousSibling;
+ if (element.nodeType == 3) {
+ element = element.previousSibling;
+ }
+ if (element && element.tagName) {
+ return element;
+ }
+ }
+ function loadCursors() {
+ // register our elements with skipper
+ var elements = CR_getElements('*', 'cursor_stop');
+ var len = elements.length;
+ for (var i = 0; i < len; i++) {
+ var element = elements[i]; 
+ element.className = 'cursor_stop cursor_hidden';
+ kibbles.skipper.append(element);
+ }
+ }
+ function toggleComments() {
+ CR_toggleCommentDisplay();
+ reloadCursors();
+ }
+ function keysOnLoadHandler() {
+ // setup skipper
+ kibbles.skipper.addStopListener(
+ kibbles.skipper.LISTENER_TYPE.PRE, updateCursor);
+ // Set the 'offset' option to return the middle of the client area
+ // an option can be a static value, or a callback
+ kibbles.skipper.setOption('padding_top', 50);
+ // Set the 'offset' option to return the middle of the client area
+ // an option can be a static value, or a callback
+ kibbles.skipper.setOption('padding_bottom', 100);
+ // Register our keys
+ kibbles.skipper.addFwdKey("n");
+ kibbles.skipper.addRevKey("p");
+ kibbles.keys.addKeyPressListener(
+ 'u', function() { window.location = detail_url; });
+ kibbles.keys.addKeyPressListener(
+ 'r', function() { window.location = detail_url + '#publish'; });
+ 
+ kibbles.keys.addKeyPressListener('j', gotoNextPage);
+ kibbles.keys.addKeyPressListener('k', gotoPreviousPage);
+ 
+ 
+ }
+ </script>
+<script src="https://ssl.gstatic.com/codesite/ph/4119706131923068122/js/code_review_scripts.js"></script>
+<script type="text/javascript">
+ function showPublishInstructions() {
+ var element = document.getElementById('review_instr');
+ if (element) {
+ element.className = 'opened';
+ }
+ }
+ var codereviews;
+ function revsOnLoadHandler() {
+ // register our source container with the commenting code
+ var paths = {'svn98bac11c0c1c4aa7f322d119080f13113dae9576': '/samples/django_sample/templates/plus/login.html'}
+ codereviews = CR_controller.setup(
+ {"assetVersionPath": "https://ssl.gstatic.com/codesite/ph/4119706131923068122", "profileUrl": "/u/101243285619078854093/", "token": "ABZ6GAcJD8CnfLcVkIvdW3LoI37AZRCt8Q:1428816617208", "projectName": "google-api-python-client", "relativeBaseUrl": "", "loggedInUserEmail": "anthonylobko@gmail.com", "domainName": null, "assetHostPath": "https://ssl.gstatic.com/codesite/ph", "projectHomeUrl": "/p/google-api-python-client"}, '', 'svn98bac11c0c1c4aa7f322d119080f13113dae9576', paths,
+ CR_BrowseIntegrationFactory);
+ 
+ codereviews.registerActivityListener(CR_ActivityType.REVEAL_DRAFT_PLATE, showPublishInstructions);
+ 
+ codereviews.registerActivityListener(CR_ActivityType.REVEAL_PUB_PLATE, pubRevealed);
+ codereviews.registerActivityListener(CR_ActivityType.REVEAL_DRAFT_PLATE, draftRevealed);
+ codereviews.registerActivityListener(CR_ActivityType.DISCARD_DRAFT_COMMENT, draftDestroyed);
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ var initialized = true;
+ reloadCursors();
+ }
+ window.onload = function() {keysOnLoadHandler(); revsOnLoadHandler();};
+
+</script>
+<script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/4119706131923068122/js/dit_scripts.js"></script>
+
+ 
+ 
+ 
+ <script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/4119706131923068122/js/ph_core.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ </body>
+</html>
+
